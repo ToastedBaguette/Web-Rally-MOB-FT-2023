@@ -2,13 +2,26 @@
 
 namespace App;
 
+use App\Models\Map;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class User extends Authenticatable
 {
     use Notifiable;
+
+    public function map()
+    {
+        return $this->belongsTo(Map::class);
+    }
+
+    public function result()
+    {
+        return $this->hasMany(Result::class);
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +29,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'username', 'password',
     ];
 
     /**
@@ -36,4 +49,6 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
 }
