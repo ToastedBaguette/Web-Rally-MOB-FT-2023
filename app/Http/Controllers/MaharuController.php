@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class MaharuController extends Controller
 {
-    //
+    public function index()
+    {
+        
+    }
 }
