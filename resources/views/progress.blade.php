@@ -21,29 +21,29 @@
 <body>
     <div class="container text-center">
         <div class="card card-rounded my-5 mx-3 py-5">
-            <h1 class="text-mob">MAGIC</h1>
-            <img class="w-100" src="{{ asset('image/progress/magic100.png') }}">
-            <h3 class="text-mob">100%</h3>
+            <h1 class="text-mob">Magic</h1>
+            <img class="w-100" src="{{ asset('image/progress/magic' . $img['Magic'] . '.png') }}">
+            <h3 class="text-mob">{{$percent['Magic']}}%</h3>
         </div>
         <div class="card card-rounded my-5 mx-3 py-5">
             <h1 class="text-mob">AI</h1>
-            <img class="w-100" src="{{ asset('image/progress/ai100.png') }}">
-            <h3 class="text-mob">100%</h3>
+            <img class="w-100" src="{{ asset('image/progress/ai' . $img['AI'] . '.png') }}">
+            <h3 class="text-mob">{{$percent['AI']}}%</h3>
         </div>
         <div class="card card-rounded my-5 mx-3 py-5">
             <h1 class="text-mob">Real Life</h1>
-            <img class="w-100" src="{{ asset('image/progress/rl100.png') }}" alt="">
-            <h3 class="text-mob">100%</h3>
+            <img class="w-100" src="{{ asset('image/progress/rl' . $img['Real Life'] . '.png') }}" alt="">
+            <h3 class="text-mob">{{$percent['Real Life']}}%</h3>
         </div>
         <div class="card card-rounded my-5 mx-3 py-5">
             <h1 class="text-mob">Fairy</h1>
-            <img class="w-100" src="{{ asset('image/progress/fairy100.png') }}" alt="">
-            <h3 class="text-mob">100%</h3>
+            <img class="w-100" src="{{ asset('image/progress/fairy' . $img['Fairy'] . '.png') }}" alt="">
+            <h3 class="text-mob">{{$percent['Fairy']}}%</h3>
         </div>
         <div class="card card-rounded my-5 mx-3 py-5">
             <h1 class="text-mob">Space</h1>
-            <img class="w-100" src="{{ asset('image/progress/space100.png') }}" alt="">
-            <h3 class="text-mob">100%</h3>
+            <img class="w-100" src="{{ asset('image/progress/space' . $img['Space'] . '.png') }}" alt="">
+            <h3 class="text-mob">{{$percent['Space']}}%</h3>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

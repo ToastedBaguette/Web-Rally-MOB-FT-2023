@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('progress');
-});
+Route::get('/', 'MaharuController@index')->name('progress');
 
-Auth::routes();
+Auth::routes(['register'=>false]);
+
+Route::middleware(['auth'])->group(function() {
+    
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
