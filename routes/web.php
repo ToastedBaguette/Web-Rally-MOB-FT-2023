@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,8 @@ Route::get('/', 'MaharuController@index')->name('progress');
 Auth::routes(['register'=>false]);
 
 Route::middleware(['auth'])->group(function() {
-    
+    Route::get('/penpos', 'PenposController@index')->name('penpos');
+    Route::post('/penpos-submit', 'PenposController@submit')->name('penpos-submit');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

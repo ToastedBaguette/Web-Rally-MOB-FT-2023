@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Models\Map;
+use App\Models\Result;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;

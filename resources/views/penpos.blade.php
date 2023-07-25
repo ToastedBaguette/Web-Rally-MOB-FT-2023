@@ -25,22 +25,27 @@
     <div class="d-flex flex-row justify-content-center align-items-center h-100">
         <div class="card w-50">
             <div class="card-header text-center">
-                <h1 class="text-mob" style="font-weight: bolder;">MAGIC - Pos 1</h1>
+                <h1 class="text-mob" style="font-weight: bolder;">{{$map->name}} - {{$user->name}}</h1>
                 
             </div>
             <div class="card-body">
                 <div class="input-section text-center">
-                    <div class="team-select my-2 ">
-                        <label class="text-mob" for="team" style="">Nomor Tim :</label>
-                        <br>
-                        <select name="team" id="team" class="form-select" required>
-                            <option value="-" selected disabled>- Pilih Team -</option>
-                            <option value="team1" id="team1">1</option>
-                        </select>
-                    </div>
-                    <label class="text-mob" for="result" style="">Hasil :</label> <br>
-                    <button class="btn btn-danger" id="btnFail">Fail</button>
-                    <button class="btn btn-success" id="btnSuccess">Success</button>
+                    <form action="{{route('penpos-submit')}}" method="post">
+                        @csrf
+                        <div class="team-select my-2 ">
+                            <label class="text-mob" for="team" style="">Nomor Tim :</label>
+                            <br>
+                            <select name="team" id="team" class="form-select" required>
+                                <option value="-" selected disabled>- Pilih Team -</option>
+                                @foreach ($listGroup as $group)
+                                    <option value="{{$group->id}}" id="team{{$group->id}}">{{$group->number}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <label class="text-mob" for="result" style="">Hasil :</label> <br>
+                        <div class="col m-0"><input type="submit" name="status" value="Success" style="height: 75px; font-size: 28px" class="fw-bold btn btn-success w-100 rounded" /></div>
+                        <div class="col m-0"><input type="submit" name="status" value="Fail" style="height: 75px; font-size: 28px" class="fw-bold btn btn-danger w-100 rounded" /></div>
+                    </form>
                 </div>
             </div>
         </div>
