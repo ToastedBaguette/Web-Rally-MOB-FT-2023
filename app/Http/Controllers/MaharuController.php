@@ -32,6 +32,10 @@ class MaharuController extends Controller
             $target1 = $target[$i]->target;
             $progress1 = $progress[$i]->progress;
 
+            if($progress1 > $target1){
+                $progress1 = $target1;
+            }
+
             $temp1 = (int)floor($progress1 / $target1 * 100);
             $temp2 = intdiv($temp1, 10);
             $temp2 = $temp2 * 10;
