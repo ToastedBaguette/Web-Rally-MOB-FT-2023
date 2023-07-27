@@ -76,7 +76,7 @@
                     <div class="card-body text-center">
                         <div class="row">
                             @foreach ($results as $result)
-                                <p>Tim {{ $groups[$result->group_id]->number }} - {{ $result->result }}</p>
+                                <p>Tim {{ $result->number }} - {{ $result->result }}</p>
                             @endforeach
                         </div>
                     </div>

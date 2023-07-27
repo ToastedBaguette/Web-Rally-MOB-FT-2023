@@ -34,7 +34,7 @@
     <div class="container text-center">
             {{-- MAGIC --}}
             <div class="card card-rounded my-5 mx-3">
-                <img class="h-75" src="{{ asset('image/progress/magic' . $img['Magic'] . '.png') }}">
+                <img class="w-100" src="{{ asset('image/progress/magic' . $img['Magic'] . '.png') }}">
                 <div class="d-flex justify-content-evenly py-4" style="background-color: indigo">
                     <h1 class="text-mob text-white">Magic</h1>
                     <h1 class="text-mob text-white">{{ $percent['Magic'] }}%</h1>
@@ -43,7 +43,7 @@
 
             {{-- AI --}}
             <div class="card card-rounded my-5 mx-3">
-                <img class="h-75" src="{{ asset('image/progress/ai' . $img['AI'] . '.png') }}">
+                <img class="w-100" src="{{ asset('image/progress/ai' . $img['AI'] . '.png') }}">
                 <div class="d-flex justify-content-evenly py-4" style="background-color: rgb(0, 0, 120)">
                     <h1 class="text-mob text-white">AI</h1>
                     <h1 class="text-mob text-white">{{ $percent['AI'] }}%</h1>
@@ -52,7 +52,7 @@
 
             {{-- Real Life --}}
             <div class="card card-rounded my-5 mx-3 reveal">
-                <img class="h-75" src="{{ asset('image/progress/rl' . $img['Real Life'] . '.png') }}" alt="">
+                <img class="w-100" src="{{ asset('image/progress/rl' . $img['Real Life'] . '.png') }}" alt="">
                 <div class="d-flex justify-content-evenly py-4" style="background-color: rgb(90, 0, 0)">
                     <h1 class="text-mob text-white">Real Life</h1>
                     <h1 class="text-mob text-white">{{ $percent['Real Life'] }}%</h1>
@@ -61,7 +61,7 @@
 
             {{-- Fairy --}}
             <div class="card card-rounded my-5 mx-3 reveal">
-                <img class="h-75" src="{{ asset('image/progress/fairy' . $img['Fairy'] . '.png') }}" alt="">
+                <img class="w-100" src="{{ asset('image/progress/fairy' . $img['Fairy'] . '.png') }}" alt="">
                 <div class="d-flex justify-content-evenly py-4" style="background-color: rgb(1, 96, 1)">
                     <h1 class="text-mob text-white">Fairy</h1>
                     <h1 class="text-mob text-white">{{ $percent['Fairy'] }}%</h1>
@@ -70,7 +70,7 @@
 
             {{-- Space --}}
             <div class="card card-rounded my-5 mx-3 reveal">
-                <img class="h-75" src="{{ asset('image/progress/space' . $img['Space'] . '.png') }}" alt="">
+                <img class="w-100" src="{{ asset('image/progress/space' . $img['Space'] . '.png') }}" alt="">
                 <div class="d-flex justify-content-evenly py-4" style="background-color: midnightblue">
                     <h1 class="text-mob text-white">Space</h1>
                     <h1 class="text-mob text-white">{{ $percent['Space'] }}%</h1>

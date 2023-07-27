@@ -17,8 +17,7 @@ class PenposController extends Controller
     {
         $user = User::find(Auth::user()->id);
         $map = DB::table("maps")->select()->where("id", "=", $user->map_id)->first();
-        $result = DB::table("results")->select()->where("post_id", "=", $user->id)->get();
-        $done = array();
+        $result = DB::table("results")->selectRaw("results.result as result, groups.number as number, results.group_id as group_id")->join("groups", "groups.id", "=", "results.group_id")->where("post_id", "=", $user->id)->get();        $done = array();
         foreach ($result as $temp) {
             array_push($done, $temp->group_id);
         }
