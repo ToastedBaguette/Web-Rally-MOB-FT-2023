@@ -60,7 +60,7 @@
                             </select>
                         </div>
                         <div class="col mb-2"><input type="submit" name="submit" value="Change"
-                                style="height: 75px; font-size: 28px" class="fw-bold btn btn-success w-100 rounded" />
+                                style="height: 50px; font-size: 20px" class="fw-bold btn btn-success w-50 rounded" />
                         </div>
                     </form>
                 </div>
@@ -80,10 +80,10 @@
                         </div>
                         <label class="text-mob" for="result" style="">Hasil :</label> <br>
                         <div class="col mb-2"><input type="submit" name="status" value="Success"
-                                style="height: 75px; font-size: 28px" class="fw-bold btn btn-success w-100 rounded" />
+                                style="height: 50px; font-size: 20px" class="fw-bold btn btn-success w-50 rounded" />
                         </div>
                         <div class="col mt-2"><input type="submit" name="status" value="Fail"
-                                style="height: 75px; font-size: 28px" class="fw-bold btn btn-danger w-100 rounded" />
+                                style="height: 50px; font-size: 20px" class="fw-bold btn btn-danger w-50 rounded" />
                         </div>
                     </form>
                 </div>
