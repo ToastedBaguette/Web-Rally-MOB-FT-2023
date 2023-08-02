@@ -17,76 +17,109 @@
 
 
 <body>
-    <div class="container text-center">
-        <div class="row my-md-3">
-            <div class="col-md-4 my-3">
+    <div class="container text-center pb-5 mb-5 pb-md-0 mb-md-0">
+        <div class="row my-md-3 justify-content-center">
+            <div class="col-md-3 my-3">
                 {{-- MAGIC --}}
-                <div class="card card-rounded mx-3">
+                <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/magic' . $img['Magic'] . '.png') }}">
-                    <div class="d-flex justify-content-evenly py-4" style="background-color: indigo">
+                    <div class="d-flex justify-content-evenly pt-3" style="background-color: darkred">
                         <h3 class="text-mob text-white">Magic</h3>
                         <h3 class="text-mob text-white">{{ $percent['Magic'] }}%</h3>
                     </div>
+                    <div class="d-flex justify-content-center pb-2" style="background-color: darkred">
+                        <h5 class="text-white">Problem Solving</h5>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="col-md-4 my-3">
+            <div class="col-md-3 my-3">
                 {{-- AI --}}
-                <div class="card card-rounded mx-3">
+                <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/ai' . $img['AI'] . '.png') }}">
-                    <div class="d-flex justify-content-evenly py-4" style="background-color: rgb(0, 0, 120)">
+                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(139, 67, 0)">
                         <h3 class="text-mob text-white">AI</h3>
                         <h3 class="text-mob text-white">{{ $percent['AI'] }}%</h3>
                     </div>
+                    <div class="d-flex justify-content-center pb-2" style="background-color: rgb(139, 67, 0)">
+                        <h5 class="text-white">Teamwork</h5>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-4 my-3">
+            <div class="col-md-3 my-3">
                 {{-- Real Life --}}
-                <div class="card card-rounded mx-3">
+                <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/rl' . $img['Real Life'] . '.png') }}"
                         alt="">
-                    <div class="d-flex justify-content-evenly py-4" style="background-color: rgb(90, 0, 0)">
+                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(198, 205, 0)">
                         <h3 class="text-mob text-white">Real Life</h3>
                         <h3 class="text-mob text-white">{{ $percent['Real Life'] }}%</h3>
                     </div>
+                    <div class="d-flex justify-content-center pb-2" style="background-color: rgb(198, 205, 0)">
+                        <h5 class="text-white">Leadership</h5>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-4 my-3">
+            <div class="col-md-3 my-3">
                 {{-- Fairy --}}
-                <div class="card card-rounded mx-3">
+                <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/fairy' . $img['Fairy'] . '.png') }}"
                         alt="">
-                    <div class="d-flex justify-content-evenly py-4" style="background-color: rgb(1, 96, 1)">
+                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(1, 96, 1)">
                         <h3 class="text-mob text-white">Fairy</h3>
                         <h3 class="text-mob text-white">{{ $percent['Fairy'] }}%</h3>
                     </div>
+                    <div class="d-flex justify-content-center pb-2" style="background-color: rgb(1, 96, 1)">
+                        <h5 class="text-white">Creativity</h5>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-4 my-3">
+            <div class="col-md-3 my-3">
                 {{-- Space --}}
-                <div class="card card-rounded mx-3">
+                <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/space' . $img['Space'] . '.png') }}"
                         alt="">
-                    <div class="d-flex justify-content-evenly py-4" style="background-color: midnightblue">
+                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(25, 45, 112)">
                         <h3 class="text-mob text-white">Space</h3>
                         <h3 class="text-mob text-white">{{ $percent['Space'] }}%</h3>
+                    </div>
+                    <div class="d-flex justify-content-center pb-2" style="background-color: rgb(25, 45, 112)">
+                        <h5 class="text-white">Unity</h5>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-md-4 my-3">
-                {{-- Untuk Tema Baru --}}
-                <div class="card card-rounded mx-3">
-                    <img class="h-75" src="{{ asset('image/progress/space' . $img['Space'] . '.png') }}"
+            <div class="col-md-3 my-3">
+                {{-- Sporty --}}
+                <div class="card card-rounded mx-3 mx-md-0">
+                    <img class="h-75" src="{{ asset('image/progress/sporty' . $img['Sporty'] . '.png') }}"
                         alt="">
-                    <div class="d-flex justify-content-evenly py-4" style="background-color: midnightblue">
-                        <h3 class="text-mob text-white">Idk</h3>
-                        <h3 class="text-mob text-white">{{ $percent['Space'] }}%</h3>
+                    <div class="d-flex justify-content-evenly pt-3" style="background-color: indigo">
+                        <h3 class="text-mob text-white">Sporty</h3>
+                        <h3 class="text-mob text-white">{{ $percent['Sporty'] }}%</h3>
+                    </div>
+                    <div class="d-flex justify-content-center pb-2" style="background-color: indigo">
+                        <h5 class="text-white">Teamwork</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 my-3">
+                {{-- Friendship --}}
+                <div class="card card-rounded mx-3 mx-md-0">
+                    <img class="h-75" src="{{ asset('image/progress/bff' . $img['Friendship'] . '.png') }}"
+                        alt="">
+                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(97, 27, 133)">
+                        <h3 class="text-mob text-white">Friendship</h3>
+                        <h3 class="text-mob text-white">{{ $percent['Friendship'] }}%</h3>
+                    </div>
+                    <div class="d-flex justify-content-center pb-2" style="background-color: rgb(97, 27, 133)">
+                        <h5 class="text-white">Problem Solving</h5>
                     </div>
                 </div>
             </div>
@@ -99,6 +132,13 @@
                 </div>
             </div>
 
+            <div class="floating-container-alt">
+                <a class="floating-button" href="{{route('status')}}">
+                    <i class="material-icons">info
+                    </i>
+                </a>
+            </div>
+
 
         </div>
 
@@ -109,7 +149,7 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                            <h1 class="fs-5 text-mob">MAP GAMES RALLY</h1>
+                        <h1 class="fs-5 text-mob">MAP GAMES RALLY</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
