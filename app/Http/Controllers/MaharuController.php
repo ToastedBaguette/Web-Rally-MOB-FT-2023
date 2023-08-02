@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -44,5 +45,10 @@ class MaharuController extends Controller
             $img[$name] = $temp2;
         }
         return view("progress", ["percent"=>$percent, "img"=>$img]);
+    }
+
+    public function status(){
+        $pos = User::all();
+        return view("status", ["pos"=>$pos]);
     }
 }

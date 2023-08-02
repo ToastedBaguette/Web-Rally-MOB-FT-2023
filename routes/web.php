@@ -15,12 +15,14 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', 'MaharuController@index')->name('progress');
+Route::get('/status', 'MaharuController@status')->name('status');
 
 Auth::routes(['register'=>false]);
 
 Route::middleware(['auth'])->group(function() {
     Route::get('/penpos', 'PenposController@index')->name('penpos');
     Route::post('/penpos-submit', 'PenposController@submit')->name('penpos-submit');
+    Route::post('/penpos-status', 'PenposController@status')->name('penpos-status');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

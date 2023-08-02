@@ -44,8 +44,26 @@
         <div class="card w-100 mx-5">
             <div class="card-header text-center">
                 <h1 class="text-mob" style="font-weight: bolder;">{{ $map->name }} - {{ $user->name }}</h1>
+                <h3 class="text-mob" style="font-weight: bolder;">Status: {{ $user->status }}</h3>
             </div>
             <div class="card-body">
+                <div class="input-section text-center">
+                    <form action="{{ route('penpos-status') }}" method="post">
+                        @csrf
+                        <div class="team-select my-2 ">
+                            <label class="text-mob" for="team" style="">Status Pos :</label>
+                            <br>
+                            <select name="statusPos" id="statusPos" class="form-select" required>
+                                <option value="Kosong">Kosong</option>
+                                <option value="Menunggu">Menunggu</option>
+                                <option value="Penuh">Penuh</option>
+                            </select>
+                        </div>
+                        <div class="col mb-2"><input type="submit" name="submit" value="Change"
+                                style="height: 75px; font-size: 28px" class="fw-bold btn btn-success w-100 rounded" />
+                        </div>
+                    </form>
+                </div>
                 <div class="input-section text-center">
                     <form action="{{ route('penpos-submit') }}" method="post">
                         @csrf

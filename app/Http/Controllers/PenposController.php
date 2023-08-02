@@ -53,7 +53,29 @@ class PenposController extends Controller
             $result->post_id = $post_id;
             $result->save();
 
+            $post = User::find(Auth::user()->id);
+            $post->status = "Kosong";
+            $post->save();
+
             return redirect()->route('penpos')->with("status", "Input data berhasil");
+        }
+    }
+
+    public function status(Request $request)
+    {
+
+        $validator = Validator::make($request->all(), [
+            'statusPos' => 'required'
+        ]);
+        if ($validator->fails()) {
+            return redirect()->route('penpos')->with("status", "Data yang diisikan belum lengkap");
+        } else {
+            $status = $request->get("statusPos");
+            $post = User::find(Auth::user()->id);
+            $post->status = $status;
+            $post->save();
+
+            return redirect()->route('penpos')->with("status", "Ubah status berhasil");
         }
     }
 }
