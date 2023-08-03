@@ -53,15 +53,15 @@
                                         <td><b>{{ $temp->name }}</b></td>
                                         <td class="text-center">{{ $temp->location }}</td>
                                         @if ($temp->status == 'Kosong')
-                                            <td class="text-center" style="background-color: green; color:white;">
+                                            <td class="text-center badge bg-success">
                                                 {{ $temp->status }}
                                             </td>
                                         @elseif ($temp->status == 'Penuh')
-                                            <td class="text-center" style="background-color: red; color:white;">
+                                            <td class="text-center badge bg-danger">
                                                 {{ $temp->status }}
                                             </td>
                                         @else
-                                            <td class="text-center" style="background-color: yellow; color:black;">
+                                            <td class="text-center badge bg-warning">
                                                 {{ $temp->status }}
                                             </td>
                                         @endif
