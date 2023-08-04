@@ -73,7 +73,7 @@
                         <h3 class="text-mob text-white">{{ $percent['Fairy'] }}%</h3>
                     </div>
                     <div class="d-flex justify-content-center pb-2" style="background-color: rgb(1, 96, 1)">
-                        <h5 class="text-white">Creativity</h5>
+                        <h5 class="text-white">Kreativitas</h5>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                         <h3 class="text-mob text-white">{{ $percent['Space'] }}%</h3>
                     </div>
                     <div class="d-flex justify-content-center pb-2" style="background-color: rgb(25, 45, 112)">
-                        <h5 class="text-white">Unity</h5>
+                        <h5 class="text-white">Satu</h5>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
             </div>
 
             <div class="floating-container-alt">
-                <a class="floating-button" href="{{route('status')}}">
+                <a class="floating-button" href="{{ route('status') }}">
                     <i class="material-icons">info
                     </i>
                 </a>
@@ -150,10 +150,31 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="fs-5 text-mob">MAP GAMES RALLY</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img class="w-100" src="{{ asset('image/mapsample.jpg') }}" alt="">
+                        <img class="w-100" src="{{ asset('image/map.png') }}" alt="">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary" aria-label="Details"
+                                data-bs-toggle="modal" data-bs-target="#modalDetails">TF Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Details -->
+        <div class="modal fade" id="modalDetails" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="fs-5 text-mob">TF DETAILS</h1>
+                        <button type="button" class="btn-close" data-bs-target="#modalMap" data-bs-toggle="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="w-100" src="{{ asset('image/mapdetails.png') }}" alt="">
                     </div>
                 </div>
             </div>
