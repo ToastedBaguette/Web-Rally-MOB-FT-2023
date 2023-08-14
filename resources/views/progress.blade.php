@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     {{-- <script src="https://kit.fontawesome.com/55a9c97135.js" crossorigin="anonymous"></script> --}}
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {{-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> --}}
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <link rel="stylesheet" href="{{ asset('css/progress.css') }}">
 </head>
@@ -127,14 +127,14 @@
 
             <div class="floating-container">
                 <div class="floating-button" data-bs-toggle="modal" data-bs-target="#modalMap">
-                    <i class="material-icons">map
+                    <i class="material-icons">Map
                     </i>
                 </div>
             </div>
 
             <div class="floating-container-alt">
                 <a class="floating-button" href="{{ route('status') }}">
-                    <i class="material-icons">info
+                    <i class="material-icons">Info
                     </i>
                 </a>
             </div>
