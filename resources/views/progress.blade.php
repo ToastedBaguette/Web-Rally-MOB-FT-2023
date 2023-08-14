@@ -133,7 +133,7 @@
             </div>
 
             <div class="floating-container-alt">
-                <a class="floating-button" href="{{ route('status') }}">
+                <a class="floating-button" href="{{ route('status') }}" style="text-decoration: none">
                     <i class="material-icons">Info
                     </i>
                 </a>
