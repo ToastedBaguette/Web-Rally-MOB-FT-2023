@@ -31,7 +31,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    padding-top: 3px;
+    /* padding-top: 3px; */
     color: white;
     line-height: 65px;
     text-align: center;
