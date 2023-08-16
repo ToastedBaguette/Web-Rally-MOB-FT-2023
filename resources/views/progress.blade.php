@@ -22,7 +22,7 @@
             <div class="col-md-3 my-3">
                 {{-- MAGIC --}}
                 <div class="card card-rounded mx-3 mx-md-0">
-                    <img class="h-75" src="{{ asset('image/progress/magic' . $img['Magic'] . '.png') }}">
+                    <img class="h-75" src="{{ asset('image/progress/magic' . $img['Problem Solving'] . '.png') }}">
                     <div class="text-center pt-3" style="background-color: darkred">
                         <h4 class="text-mob text-white">Problem Solving</h4>
                         <h4 class="text-mob text-white">{{ $percent['Problem Solving'] }}%</h4>
@@ -34,7 +34,7 @@
             <div class="col-md-3 my-3">
                 {{-- AI --}}
                 <div class="card card-rounded mx-3 mx-md-0">
-                    <img class="h-75" src="{{ asset('image/progress/ai' . $img['AI'] . '.png') }}">
+                    <img class="h-75" src="{{ asset('image/progress/ai' . $img['Teamwork'] . '.png') }}">
                     <div class="text-center pt-3" style="background-color: rgb(139, 67, 0)">
                         <h4 class="text-mob text-white">Teamwork</h4>
                         <h4 class="text-mob text-white">{{ $percent['Teamwork'] }}%</h4>
