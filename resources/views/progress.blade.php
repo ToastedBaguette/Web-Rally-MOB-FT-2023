@@ -22,10 +22,10 @@
             <div class="col-md-3 my-3">
                 {{-- MAGIC --}}
                 <div class="card card-rounded mx-3 mx-md-0">
-                    <img class="h-75" src="{{ asset('image/progress/magic' . $img['Magic'] . '.png') }}">
+                    <img class="h-75" src="{{ asset('image/progress/magic' . $img['Problem Solving'] . '.png') }}">
                     <div class="d-flex justify-content-evenly pt-3" style="background-color: darkred">
                         <h4 class="text-mob text-white">Problem Solving</h4>
-                        <h4 class="text-mob text-white">{{ $percent['Magic'] }}%</h4>
+                        <h4 class="text-mob text-white">{{ $percent['Problem Solving'] }}%</h4>
                     </div>
                 </div>
 
@@ -34,10 +34,10 @@
             <div class="col-md-3 my-3">
                 {{-- AI --}}
                 <div class="card card-rounded mx-3 mx-md-0">
-                    <img class="h-75" src="{{ asset('image/progress/ai' . $img['AI'] . '.png') }}">
+                    <img class="h-75" src="{{ asset('image/progress/ai' . $img['Teamwork'] . '.png') }}">
                     <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(139, 67, 0)">
                         <h4 class="text-mob text-white">Teamwork</h4>
-                        <h4 class="text-mob text-white">{{ $percent['AI'] }}%</h4>
+                        <h4 class="text-mob text-white">{{ $percent['Teamwork'] }}%</h4>
                     </div>
                 </div>
             </div>
@@ -45,11 +45,11 @@
             <div class="col-md-3 my-3">
                 {{-- Real Life --}}
                 <div class="card card-rounded mx-3 mx-md-0">
-                    <img class="h-75" src="{{ asset('image/progress/rl' . $img['Real Life'] . '.png') }}"
+                    <img class="h-75" src="{{ asset('image/progress/rl' . $img['Leadership'] . '.png') }}"
                         alt="">
                     <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(198, 205, 0)">
                         <h4 class="text-mob text-white">Leadership</h4>
-                        <h4 class="text-mob text-white">{{ $percent['Real Life'] }}%</h4>
+                        <h4 class="text-mob text-white">{{ $percent['Leadership'] }}%</h4>
                     </div>
                 </div>
             </div>
@@ -57,11 +57,11 @@
             <div class="col-md-3 my-3">
                 {{-- Fairy --}}
                 <div class="card card-rounded mx-3 mx-md-0">
-                    <img class="h-75" src="{{ asset('image/progress/fairy' . $img['Fairy'] . '.png') }}"
+                    <img class="h-75" src="{{ asset('image/progress/fairy' . $img['Kreativitas'] . '.png') }}"
                         alt="">
                     <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(1, 96, 1)">
                         <h4 class="text-mob text-white">Kreativitas</h4>
-                        <h4 class="text-mob text-white">{{ $percent['Fairy'] }}%</h4>
+                        <h4 class="text-mob text-white">{{ $percent['Kreativitas'] }}%</h4>
                     </div>
                 </div>
             </div>
@@ -69,11 +69,11 @@
             <div class="col-md-3 my-3">
                 {{-- Space --}}
                 <div class="card card-rounded mx-3 mx-md-0">
-                    <img class="h-75" src="{{ asset('image/progress/space' . $img['Space'] . '.png') }}"
+                    <img class="h-75" src="{{ asset('image/progress/space' . $img['Satu'] . '.png') }}"
                         alt="">
                     <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(25, 45, 112)">
                         <h4 class="text-mob text-white">Satu</h4>
-                        <h4 class="text-mob text-white">{{ $percent['Space'] }}%</h4>
+                        <h4 class="text-mob text-white">{{ $percent['Satu'] }}%</h4>
                     </div>
                 </div>
             </div>
