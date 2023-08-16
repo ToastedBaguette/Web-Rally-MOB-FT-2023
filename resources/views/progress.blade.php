@@ -23,7 +23,7 @@
                 {{-- MAGIC --}}
                 <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/magic' . $img['Magic'] . '.png') }}">
-                    <div class="d-flex justify-content-evenly pt-3" style="background-color: darkred">
+                    <div class="text-center pt-3" style="background-color: darkred">
                         <h4 class="text-mob text-white">Problem Solving</h4>
                         <h4 class="text-mob text-white">{{ $percent['Magic'] }}%</h4>
                     </div>
@@ -35,7 +35,7 @@
                 {{-- AI --}}
                 <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/ai' . $img['AI'] . '.png') }}">
-                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(139, 67, 0)">
+                    <div class="text-center pt-3" style="background-color: rgb(139, 67, 0)">
                         <h4 class="text-mob text-white">Teamwork</h4>
                         <h4 class="text-mob text-white">{{ $percent['AI'] }}%</h4>
                     </div>
@@ -47,7 +47,7 @@
                 <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/rl' . $img['Real Life'] . '.png') }}"
                         alt="">
-                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(198, 205, 0)">
+                    <div class="text-center pt-3" style="background-color: rgb(198, 205, 0)">
                         <h4 class="text-mob text-white">Leadership</h4>
                         <h4 class="text-mob text-white">{{ $percent['Real Life'] }}%</h4>
                     </div>
@@ -59,7 +59,7 @@
                 <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/fairy' . $img['Fairy'] . '.png') }}"
                         alt="">
-                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(1, 96, 1)">
+                    <div class="text-center pt-3" style="background-color: rgb(1, 96, 1)">
                         <h4 class="text-mob text-white">Kreativitas</h4>
                         <h4 class="text-mob text-white">{{ $percent['Fairy'] }}%</h4>
                     </div>
@@ -71,7 +71,7 @@
                 <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/space' . $img['Space'] . '.png') }}"
                         alt="">
-                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(25, 45, 112)">
+                    <div class="text-center pt-3" style="background-color: rgb(25, 45, 112)">
                         <h4 class="text-mob text-white">Satu</h4>
                         <h4 class="text-mob text-white">{{ $percent['Space'] }}%</h4>
                     </div>
@@ -84,7 +84,7 @@
                 <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/sporty' . $img['Sporty'] . '.png') }}"
                         alt="">
-                    <div class="d-flex justify-content-evenly pt-3" style="background-color: indigo">
+                    <div class="text-center pt-3" style="background-color: indigo">
                         <h4 class="text-mob text-white">Sporty</h4>
                         <h4 class="text-mob text-white">{{ $percent['Sporty'] }}%</h4>
                     </div>
@@ -96,7 +96,7 @@
                 <div class="card card-rounded mx-3 mx-md-0">
                     <img class="h-75" src="{{ asset('image/progress/bff' . $img['Friendship'] . '.png') }}"
                         alt="">
-                    <div class="d-flex justify-content-evenly pt-3" style="background-color: rgb(97, 27, 133)">
+                    <div class="text-center pt-3" style="background-color: rgb(97, 27, 133)">
                         <h4 class="text-mob text-white">Friendship</h4>
                         <h4 class="text-mob text-white">{{ $percent['Friendship'] }}%</h4>
                     </div>
